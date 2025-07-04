@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abi Firmansyah — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Fira Code', monospace;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0d1117 url('https://cdn.pixabay.com/photo/2016/11/29/03/53/leaves-1869205_1280.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      padding: 40px;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      margin: 20px 0;
+      color: #58a6ff;
+    }
+
+    .badges {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .badges img {
+      margin: 8px;
+    }
+
+    .chessboard,
+    .stats,
+    .spotify {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .spotify img {
+      border-radius: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #999;
+    }
+
+    .leaf {
+      position: fixed;
+      top: -10%;
+      animation: fall 10s linear infinite;
+      opacity: 0.5;
+      z-index: 0;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(0) rotate(0deg); left: calc(100% * var(--i)); }
+      100% { transform: translateY(110vh) rotate(360deg); left: calc(100% * var(--i)); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <img class="leaf" src="https://cdn-icons-png.flaticon.com/512/415/415682.png" style="--i:0.1; width:30px;">
+  <img class="leaf" src="https://cdn-icons-png.flaticon.com/512/415/415682.png" style="--i:0.4; width:40px;">
+  <img class="leaf" src="https://cdn-icons-png.flaticon.com/512/415/415682.png" style="--i:0.7; width:25px;">
+
+  <div class="container">
+    <h1>👋 Halo, Saya Abi!</h1>
+    <div style="text-align:center;">
+      <img src="https://raw.githubusercontent.com/saadeghi/saadeghi/main/tux.gif" width="100" alt="Linux Penguin" />
+      <img src="https://avatars.githubusercontent.com/u/10568265?v=4" width="120" style="border-radius: 50%;" alt="My Avatar" />
+    </div>
+
+    <h2>🧠 Keahlian Utama</h2>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
+      <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
+      <img src="https://img.shields.io/badge/Laravel-FC494E?style=for-the-badge&logo=laravel&logoColor=white" />
+      <img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+    </div>
+
+    <h2>♟️ Let's Play Chess</h2>
+    <div class="chessboard">
+      <img src="https://raw.githubusercontent.com/marcizhu/readme-chess/main/badges/board.svg" width="300" alt="Chess Board">
+    </div>
+
+    <h2>📊 Statistik</h2>
+    <div class="stats">
+      <img src="https://streak-stats.demolab.com?user=abibibi87&theme=tokyonight&hide_border=true&fire=DD2727&ring=4F8CC9&background=0D1117" />
+      <br>
+      <img src="https://github-readme-stats.vercel.app/api?username=abibibi87&show_icons=true&theme=tokyonight&hide_border=true&icon_color=ff5555&title_color=58a6ff" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abibibi87&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+    </div>
+
+    <h2>🎧 Lagu Favorit Saat Ngoding</h2>
+    <div class="spotify">
+      <a href="https://open.spotify.com/track/27xvsEVJolDpEDy5PtD0hq?si=6546b34badfb4f5c" target="_blank">
+        <img src="https://i.scdn.co/image/ab67616d00001e027ac2f1524d8262fcbcd0e406" width="200" alt="My Heart - Acha Septriasa & Irwansyah">
+        <p><b>My Heart</b> - Acha Septriasa & Irwansyah</p>
+      </a>
+      <p><a href="https://open.spotify.com/user/31s7o5oqum62h4kamyxazwnl3zci">Profil Spotify Saya</a></p>
+    </div>
+
+    <h2>📫 Kontak Saya</h2>
+    <ul>
+      <li>🌐 Website: <i>(coming soon)</i></li>
+      <li>📬 Email: abibibi87@example.com</li>
+      <li>💼 LinkedIn: <a href="https://linkedin.com/in/">linkedin.com/in/</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    Made with ❤️ by Abi | Dark theme • Chess • Music • Linux
+  </footer>
+</body>
+</html>
