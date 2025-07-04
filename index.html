@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Abi Firmansyah</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -41,24 +41,18 @@
       color: #58a6ff;
     }
 
-    .badges {
+    .badges, .game, .stats, .spotify {
       text-align: center;
-      margin-bottom: 30px;
+      margin: 30px 0;
     }
 
     .badges img {
       margin: 8px;
     }
 
-    .game,
-    .stats,
-    .spotify {
-      text-align: center;
-      margin: 30px 0;
-    }
-
-    .spotify img {
+    .spotify iframe {
       border-radius: 12px;
+      max-width: 600px;
     }
 
     footer {
@@ -86,12 +80,14 @@
 
   <div class="overlay"></div>
 
+  <!-- Daun Berguguran -->
   <img class="leaf" src="https://cdn-icons-png.flaticon.com/512/415/415682.png" style="--i:0.1; width:30px;">
   <img class="leaf" src="https://cdn-icons-png.flaticon.com/512/415/415682.png" style="--i:0.4; width:40px;">
   <img class="leaf" src="https://cdn-icons-png.flaticon.com/512/415/415682.png" style="--i:0.7; width:25px;">
 
   <div class="container">
     <h1>👋 Halo, Saya Abi!</h1>
+
     <div style="text-align:center;">
       <img src="https://avatars.githubusercontent.com/u/90772789?v=4" width="120" style="border-radius: 50%;" alt="My Avatar" />
     </div>
@@ -108,22 +104,21 @@
 
     <h2>🎮 Mini Game</h2>
     <div class="game">
-     <iframe src="https://wayou.github.io/t-rex-runner/" width="600" height="150" frameborder="0"></iframe>
+      <iframe src="https://wayou.github.io/t-rex-runner/" width="600" height="150" frameborder="0"></iframe>
     </div>
 
     <h2>📊 Statistik</h2>
     <div class="stats">
       <img src="https://streak-stats.demolab.com?user=abibibi87&theme=highcontrast&hide_border=true&fire=DD2727&ring=F59E0B&currStreakNum=FF5F1F&sideNums=FFD700&background=0D1117" />
-      <br>
+      <br><br>
       <img src="https://github-readme-stats.vercel.app/api?username=abibibi87&show_icons=true&theme=tokyonight&hide_border=true&icon_color=ff5555&title_color=58a6ff" />
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abibibi87&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
     </div>
 
     <h2>🎧 Lagu Favorit</h2>
     <div class="spotify">
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/27xvsEVJolDpEDy5PtD0hq?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <p><a href="https://open.spotify.com/user/31s7o5oqum62h4kamyxazwnl3zci" target="_blank">
-      </a></p>
+      <iframe src="https://open.spotify.com/embed/track/27xvsEVJolDpEDy5PtD0hq?utm_source=generator" width="100%" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <p><a href="https://open.spotify.com/user/31s7o5oqum62h4kamyxazwnl3zci" target="_blank">🎵 Lihat Profil Spotify Saya</a></p>
     </div>
 
     <h2>📫 Kontak Saya</h2>
@@ -135,7 +130,8 @@
   </div>
 
   <footer>
-    Made with ❤️ | Dark theme • Game • Music • Linux
+    Made with ❤️ by Abi | Dark theme • Game • Music • Linux
   </footer>
+
 </body>
 </html>
