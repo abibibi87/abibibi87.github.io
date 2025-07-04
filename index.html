@@ -74,6 +74,40 @@
       0% { transform: translateY(0) rotate(0deg); left: calc(100% * var(--i)); }
       100% { transform: translateY(110vh) rotate(360deg); left: calc(100% * var(--i)); }
     }
+
+    /* --- Efek api --- */
+    .fire-box {
+      display: inline-block;
+      padding: 20px;
+      border: 2px solid #ff0000;
+      border-radius: 12px;
+      background: rgba(255, 70, 0, 0.1);
+      box-shadow:
+        0 0 20px rgba(255, 70, 0, 0.6),
+        0 0 40px rgba(255, 100, 0, 0.4),
+        0 0 60px rgba(255, 150, 0, 0.2);
+      animation: flicker 1s infinite;
+      transition: 0.3s;
+    }
+
+    @keyframes flicker {
+      0% { box-shadow: 0 0 20px #ff4500, 0 0 40px #ff6347, 0 0 60px #ffa500; }
+      50% { box-shadow: 0 0 10px #ff8c00, 0 0 30px #ff4500, 0 0 50px #ff0000; }
+      100% { box-shadow: 0 0 20px #ff4500, 0 0 40px #ff6347, 0 0 60px #ffa500; }
+    }
+
+    .game iframe {
+      width: 800px;
+      height: 220px;
+      overflow: hidden;
+      border: 3px solid #ffffff22;
+      border-radius: 12px;
+      pointer-events: auto;
+    }
+
+    .game::-webkit-scrollbar {
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -104,11 +138,11 @@
 
     <h2>🎮 Mini Game</h2>
     <div class="game">
-      <iframe src="https://wayou.github.io/t-rex-runner/" width="600" height="150" frameborder="0"></iframe>
+      <iframe src="https://wayou.github.io/t-rex-runner/" frameborder="0" scrolling="no"></iframe>
     </div>
 
     <h2>📊 Statistik</h2>
-    <div class="stats">
+    <div class="stats fire-box">
       <img src="https://streak-stats.demolab.com?user=abibibi87&theme=highcontrast&hide_border=true&fire=DD2727&ring=F59E0B&currStreakNum=FF5F1F&sideNums=FFD700&background=0D1117" />
       <br><br>
       <img src="https://github-readme-stats.vercel.app/api?username=abibibi87&show_icons=true&theme=tokyonight&hide_border=true&icon_color=ff5555&title_color=58a6ff" />
